@@ -287,6 +287,11 @@ img {
 .social-media-item {
     width: 40px;
     height: 40px;
+}
+
+.social-media-link {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: #4D5AE5;
     display: flex;
@@ -299,10 +304,11 @@ img {
     margin-bottom: 32px;
 }
 
-.social-media-icon {
-    padding: 10px;
-    box-sizing: content-box;
+.social-media-link:hover,
+.social-media-link:focus {
+    background-color: #404BBF;
 }
+
 
 /* -----------------------CUSTOMERS-------------------------- */
 
@@ -330,11 +336,24 @@ img {
 .customer-item {
     width: 168px;
     height: 88px;
+}
+
+.customer-link {
+    width: 100%;
+    height: 100%;
     border: 1px solid #8E8F99;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.custumer-icon {
+    fill: #8E8F99;
+}
+
+.custumer-icon:hover,
+.custumer-icon:focus {
+    fill: #404BBF;
 }
 
 /* -----------------------FOOTER-------------------------- */
@@ -384,11 +403,29 @@ img {
     background-color: var(--background-color-dark);
 }
 
+.social-media-item-footer {
+    width: 40px;
+    height: 40px;
+}
+
+.social-media-link-footer {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-link-footer:hover,
+.social-media-link-footer:focus {
+    background-color: #31D0AA;
+}
 /* -----------------------PORTFOLIO-------------------------- */
 
 .portfolio {
-    padding-bottom: 120px;
-    padding-top: 96px;
+    padding: 96px 0 120px 0;
 }
 
 .portfolio-btn {
@@ -438,16 +475,17 @@ img {
     max-width: 360px;
 }
 
+.portfolio-link:hover,
+.portfolio-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-descr-container {
     border: 1px solid #E7E9FC;
     border-top: transparent;
     padding-left: 16px;
-}
-.portfolio-descr-container:hover,
-.portfolio-descr-container:focus {
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-    0px 1px 1px rgba(46, 47, 66, 0.16), 
-    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .projects-item:nth-child(-n+6) {

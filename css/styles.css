@@ -349,6 +349,8 @@ img {
 }
 .custumer-icon {
     fill: #8E8F99;
+    padding: 54px 32px;
+    box-sizing: content-box;
 }
 
 .custumer-icon:hover,
